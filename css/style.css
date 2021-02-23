@@ -1,0 +1,187 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+.container{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    
+    background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
+    overflow-x: hidden;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+.center-cube{
+  position: absolute;
+  width:400px;
+  height:500px;
+  left:470px;
+  top:10px;
+  background:rgba(0,0,0,0.1);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  z-index: 20;
+  -webkit-animation: center-cube 2s;
+          animation: center-cube 2s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+.center-cube img{
+    position: absolute;
+    width:100%;
+    height:500px;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+}
+.center-cube:hover img:nth-child(4){
+    -webkit-transform: translate(120px, -120px);
+        -ms-transform: translate(120px, -120px);
+            transform: translate(120px, -120px);
+    opacity:1;
+}
+.center-cube:hover img:nth-child(3){
+    -webkit-transform: translate(90px, -90px);
+        -ms-transform: translate(90px, -90px);
+            transform: translate(90px, -90px);
+    opacity:0.9;
+}
+.center-cube:hover img:nth-child(2){
+    -webkit-transform: translate(60px, -60px);
+        -ms-transform: translate(60px, -60px);
+            transform: translate(60px, -60px);
+    opacity:0.8;
+}
+.center-cube:hover img:nth-child(1){
+    -webkit-transform: translate(30px, -30px);
+        -ms-transform: translate(30px, -30px);
+            transform: translate(30px, -30px);
+    opacity:0.3;
+}
+.circle1{
+    border-radius: 50%;
+    height: 90px;
+    width: 90px;
+    left:120px;
+    background-image: -webkit-gradient(linear, left bottom, left top, from(#30cfd0), to(#330867));
+    background-image: -o-linear-gradient(bottom, #30cfd0 0%, #330867 100%);
+    background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+    -webkit-animation: mycircle1 1s;
+            animation: mycircle1 1s;
+    position:absolute;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+}
+.circle2{
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    left:900px;
+    background-image: -o-linear-gradient(315deg, #667eea 0%, #764ba2 100%);
+    background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    -webkit-animation: mycircle2 2s;
+            animation: mycircle2 2s;
+    position:absolute;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+}
+.circle3{
+    border-radius: 50%;
+    height: 130px;
+    width: 130px;
+    left:1020px;
+    background-image: -webkit-gradient(linear, left bottom, left top, from(#37ecba), to(#72afd3));
+    background-image: -o-linear-gradient(bottom, #37ecba 0%, #72afd3 100%);
+    background-image: linear-gradient(to top, #37ecba 0%, #72afd3 100%);
+    -webkit-animation: mycircle3 3s;
+            animation: mycircle3 3s;
+    position:absolute;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+}
+.circle4{
+    border-radius: 50%;
+    height: 85px;
+    width: 85px;
+    left:200px;
+    background-image: -webkit-gradient(linear, left bottom, left top, from(#50cc7f), to(#f5d100));
+    background-image: -o-linear-gradient(bottom, #50cc7f 0%, #f5d100 100%);
+    background-image: linear-gradient(to top, #50cc7f 0%, #f5d100 100%);
+    -webkit-animation: mycircle4 3s;
+            animation: mycircle4 3s;
+    position:absolute;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+}
+.img-block{
+    height:70px;
+    width:70px;
+    -webkit-animation: myicon 2.1s;
+            animation: myicon 2.1s;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+    position: absolute;
+    z-index: 5;
+}
+
+
+/*cubes*/
+
+.cube {
+    position: absolute;
+    top: 80vh;
+    left: 45vw;
+    width: 10px;
+    height: 10px;
+    border: solid 1px #D7D4E4;
+    -webkit-transform-origin: top left;
+        -ms-transform-origin: top left;
+            transform-origin: top left;
+    -webkit-transform: scale(0) rotate(0deg) translate(-50%, -50%);
+        -ms-transform: scale(0) rotate(0deg) translate(-50%, -50%);
+            transform: scale(0) rotate(0deg) translate(-50%, -50%);
+    -webkit-animation: cube 12s ease-in forwards infinite;
+            animation: cube 12s ease-in forwards infinite;
+  }
+  .cube:nth-child(2n) {
+    border-color: #FFF ;
+  }
+  .cube:nth-child(2) {
+    -webkit-animation-delay: 2s;
+            animation-delay: 2s;
+    left: 25vw;
+    top: 40vh;
+  }
+  .cube:nth-child(3) {
+    -webkit-animation-delay: 4s;
+            animation-delay: 4s;
+    left: 75vw;
+    top: 50vh;
+  }
+  .cube:nth-child(4) {
+    -webkit-animation-delay: 6s;
+            animation-delay: 6s;
+    left: 90vw;
+    top: 10vh;
+  }
+  .cube:nth-child(5) {
+    -webkit-animation-delay: 8s;
+            animation-delay: 8s;
+    left: 10vw;
+    top: 85vh;
+  }
+  .cube:nth-child(6) {
+    -webkit-animation-delay: 10s;
+            animation-delay: 10s;
+    left: 50vw;
+    top: 10vh;
+  }

@@ -1,0 +1,36 @@
+
+@keyframes mycircle1{
+    0%{transform: translateY(0px) rotate(0deg);}
+    100%{transform: translateY(90px) rotate(360deg);}
+    
+}
+@keyframes mycircle2{
+    0%{transform: translateY(0px) rotate(0deg);}
+    100%{transform: translateY(500px) rotate(360deg);}
+}
+@keyframes mycircle3{
+    0%{transform: translateY(0px) rotate(0deg);}
+    100%{transform: translateY(80px) rotate(360deg);}
+}
+@keyframes mycircle4{
+    0%{transform: translateY(0px) rotate(0deg);}
+    100%{transform: translateY(440px) rotate(360deg);}
+}
+@keyframes center-cube{
+    0%{transform: translateY(0px) rotate3d(360, 120, -90, 60deg) rotateZ(-30deg);}
+    100%{transform: translateY(140px) rotate3d(360, 120, -90, 60deg) rotateZ(-30deg);}
+}
+@keyframes myicon{
+    0%{left:1150px;top:50px;transform:rotate(0deg)}
+    100%{left:1150px;top:510px;transform:rotate(360deg)}
+}
+@keyframes cube {
+    from {
+      transform: scale(0) rotate(0deg) translate(-50%, -50%);
+      opacity: 1;
+    }
+    to {
+      transform: scale(20) rotate(960deg) translate(-50%, -50%);
+      opacity: 0;
+    }
+  }
